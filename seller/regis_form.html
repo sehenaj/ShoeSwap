@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    body {
+      line-height: 1.5;
+      font-family: 'Poppins', sans-serif;
+      /* background-image: linear-gradient(to left top, #c17c0e, #cf6b16, #dc5626, #e53c38, #eb124d); */
+      background-image: url('https://img.freepik.com/free-photo/lovely-sport-composition-with-skipping-rope-trainers_23-2148000606.jpg?size=626&ext=jpg&ga=GA1.1.789054279.1682529436&semt=ais');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    
+    .bg-gradient-nav {
+      /* background: -webkit-linear-gradient(to right, #cbad6d, #d53369);
+background: linear-gradient(to right, #cbad6d, #d53369); */
+      background-color: #000;
+      color: #ffffff;
+    }
+
+    crousel-h {
+      height: 200px;
+    }
+
+    a {
+      color: white;
+    }
+
+    /* -----------------------------Footer----------------------- */
+    .container-form {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      /* background-color: tomato; */
+      /* border: red 2px solid; */
+      width: 28%;
+      margin: 30px 99px;
+      border-radius: 11px
+    }
+
+    .container-form h1 {
+      color: white;
+    }
+
+    .container-form form {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+
+
+    }
+
+    form input {
+      width: 515px;
+      height: 48px;
+      margin: 41px;
+      border: none;
+      border-radius: 11px
+    }
+
+    form span {
+      margin: 0;
+      padding: 0px;
+      color: rgb(237, 34, 34);
+    }
+
+    form input[type="submit"] {
+      font-size: 1.5em;
+      border-radius: 10px;
+    }
+
+
+    /* -----------------FOOTER------------- */
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+    body {
+      line-height: 1.5;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 1170px;
+      margin: auto;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .footer {
+      background-color: #24262b;
+      padding: 70px 0;
+    }
+
+    .footer-col {
+      width: 25%;
+      padding: 0 15px;
+    }
+
+    .footer-col h4 {
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .footer-col h4::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      background-color: #e91e63;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px;
+    }
+
+    .footer-col ul li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;
+    }
+
+    .footer-col ul li a:hover {
+      color: #ffffff;
+      padding-left: 8px;
+    }
+
+    .footer-col .social-links a {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgb(255, 255, 255, 0.2);
+      margin: 0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+    }
+
+    .footer-col .social-links a:hover {
+      color: #24262b;
+      background-color: #ffffff;
+    }
+    .submit-button {
+      /* Styles for the button */
+      background-color: white; /* Set your desired background color */
+      color: black; /* Set the text color */
+      padding: 10px 20px; /* Set padding */
+      border: none; /* Remove border */
+      cursor: pointer; /* Add a pointer cursor */
+    
+      /* Hover styles */
+      transition: background-color 0.3s ease-in-out; /* Add transition effect */
+    }
+    
+    .submit-button:hover {
+      background-color: black;
+      color: white; /* Set the desired background color on hover */
+    }
+    
+
+
+    /*responsive*/
+    @media(max-width: 767px) {
+      .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+      }
+    }
+
+    @media(max-width: 574px) {
+      .footer-col {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <script src="js/regis_form_seller.js"></script>
+</head>
+
+<body>
+
+  <!-- -------------------------------Body-------------------------------->
+
+  <section id="my-form">
+    <div class="container-form">
+
+
+      <h1>Registration Form</h1>
+      <form method="POST" action="php/registration_data.php" onsubmit="return validateForm()">
+        <input type="text" name="fname" placeholder="FIRST NAME"><span id="fname-error" class="form-error"></span>
+        <input type="text" name="lname" placeholder="LAST NAME"><span id="lname-error" class="form-error"></span>
+        <input type="text" name="address" placeholder="ADDRESS"><span id="add-error" class="form-error"></span>
+        <input type="text" name="city" placeholder="CITY"><span id="city-error" class="form-error"></span>
+        <input type="text" name="pin" placeholder="PIN"><span id="pin-error" class="form-error"></span>
+        <input type="text" name="phone_number" placeholder="CONTACT" maxlength="10"
+          onkeypress="return isNumeric(event)"><span id="phone-error" class="form-error"></span>
+        
+        <input type="submit" value="Submit" class="submit-button">
+
+      </form>
+
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <!-- -------------------------------Body-------------------------------->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>
