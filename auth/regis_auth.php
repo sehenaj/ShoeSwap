@@ -1,6 +1,6 @@
 <?php
 include('database.php');
-$conn=mysqli_connect($host,$username,$password,"sholler");
+$conn=mysqli_connect($host,$username,$password,"ShowSwap");
 
 
 
@@ -22,13 +22,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         while($rows= mysqli_fetch_assoc($result)){
            if( $rows["USERNAME"]==$user){
             $counter++;
-            echo '<script>alert("Username Already Exist.")</script>';
-           
+            echo '<script>
+            alert("Username Already Exist.");
+             window.location.href = "../index.php?showRegModal=true";
+            </script>';
+            exit();
+
            }
            elseif($rows["EMAIL_ID"]==$email){
             $counter++;
-            echo '<script>alert("Email Already Exist.")</script>';
-            
+            echo '<script>
+            alert("Email Already Exist.");
+             window.location.href = "../index.php?showRegModal=true";
+            </script>';
+            exit();
 
            }
            
@@ -43,13 +50,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
             die("Wrong Input..!!".mysqli_connect_errno());
         }
         else{
-            echo '<script>alert("User Created.")</script>';
-            header("Location: login.php");
+            echo '<script>
+            alert("User Created.");
+             window.location.href = "../index.php";
+            </script>';
+            exit();
+
         }
 
     }
     else{
-        echo '<script>alert("Re-Enter Password Correctly.")</script>';
+        echo '<script>
+        alert("Re-Enter Password Correctly.");
+        window.location.href = "../index.php?showRegModal=true";
+        </script>';
+        exit();
+
 
     }
 }
