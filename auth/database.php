@@ -7,7 +7,7 @@ $password="";
 //creating Connection
 $conn=mysqli_connect($host,$username,$password);
 
-$database="sholler";
+$database="ShowSwap";
 
 if(!$conn){
     die("<br>Connection Failed.".mysqli_connect_error());
