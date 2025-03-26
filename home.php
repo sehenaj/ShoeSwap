@@ -44,7 +44,7 @@ include("auth/database.php");
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="wishlist.php">Wishlist</a>
+                            <a class="nav-link" href="" id="modal" data-bs-toggle="popover">Wishlist</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="cart.php">Cart</a>
@@ -57,44 +57,12 @@ include("auth/database.php");
                         </li>
                     </div>
                 </ul>
-                <form class="form-inline my-2 my-lg-0 " action="search.php" method="POST">
-                    <!-- <input class="form-control mr-sm-2" name="search"type="search" placeholder="Search" aria-label="Search"> -->
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                <button type="submit" class="btn button-primary"><a href="logout.php"><img src="images/icons/logout.png"
-                            alt="" width="30px"></a></button>
 
             </div>
 
         </nav>
         <!-- --------------------navbar---------------------- -->
-        <!-- --------------------Crousel---------------------- -->
-        <div id="carouselExampleIndicators" class="carousel slide crousel-h" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 
-            </ol>
-            <div class="carousel-inner h-10">
-                <div class="carousel-item active">
-                    <img src="images/banner/banner1.png" class="d-block w-100 img-fluid" height="100px" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/banner/banner3.png" class="d-block w-100 img-fluid" height="100px" alt="...">
-                </div>
-
-            </div>
-            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </button>
-        </div>
-
-        <!-- --------------------Crousel---------------------- -->
         <div class="card text-white bg-gradient-nav m-3">
 
             <div class="card-body">
