@@ -1,6 +1,6 @@
 <?php
 include('database.php');
-$conn=mysqli_connect($host,$username,$password,"sholler");
+$conn=mysqli_connect($host,$username,$password,"ShowSwap");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $user=$_POST["user-name"];
@@ -24,10 +24,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                     $_SESSION["status"]="active";
                     if( $rows["FNAME"]==null){
 
-                        header("Location: regis_form.html");
+                        header("Location: ../regis_form.html");
                     }
                     else{
-                        header("Location: Home.php");
+                        header("Location: ../home.php");
                     }
                     
                 }
@@ -37,12 +37,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     }
     if($counter==1){
-        echo '<script>alert("Password Mismatch.")</script>';
+        echo '<script>
+        alert("Password Mismatch."); window.location.href = "../index.php?showLoginModal=true";
+        </script>';
         exit();
+
     }
     elseif($counter==0){
-        echo '<script>alert("User Does not Exist.. \nRegister First")</script>';
+        echo '<script>
+        alert("User Does not Exist.. \nRegister First"); window.location.href = "../index.php?showRegModal=true";
+        </script>';
         exit();
+
     }
    
 }
